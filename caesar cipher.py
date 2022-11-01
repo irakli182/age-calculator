@@ -75,6 +75,14 @@ def encrypt():
                 encrypt_sentence.append(":")
                 k = k + 1
                 break
+            elif sentence[k+1] == '"':
+                encrypt_sentence.append('"')
+                k = k + 1
+                break 
+            elif sentence[k+1] == '"':
+                encrypt_sentence.append('"')
+                k = k + 1
+                break           
             elif sentence == "exit":
                 print()
                 print("|--------------------|")
@@ -139,6 +147,14 @@ def decrypt():
                 encrypt_sentence.append(":")
                 k = k + 1
                 break
+            elif sentence[k+1] == '"':
+                encrypt_sentence.append('"')
+                k = k + 1
+                break 
+            elif sentence[k+1] == '"':
+                encrypt_sentence.append('"')
+                k = k + 1
+                break 
             elif sentence == "exit":
                 print()
                 print("|--------------------|")
@@ -193,4 +209,5 @@ def ask():
 
 
 main()   # starting program
+    
     
